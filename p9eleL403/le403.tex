@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	Only permanent magnets are colored - usually the north pole is red and the south pole is green. With an electromagnet you can check the polarity with a compass needle. Its northern tip then points to the South Pole.
+	
+	\noindent{\bf Task 1. b)}\\
+	In an unbranched circuit, the current strength is the same everywhere, so both lamps shine equally brightly.
+	
+	\noindent{\bf Task 2. a)}\\
+	Both rods are magnetized in the same direction. The south pole of one rod and the north pole of the other rod attract each other. The bars stick to each other.
+	
+	\noindent{\bf Task 2 b)}\\
+	Both rods are magnetized in the same direction again. But now the same poles are next to each other. The rods repel each other.
+	
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 3. a)}\\
+		\includegraphics[width=5 cm]{stro403}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 3. b)}\\
+		\includegraphics[width=5 cm]{span403}
+	\end{minipage}
+	
+	\noindent
+	\begin{minipage}{0.3\textwidth}
+		\noindent{\bf Task 4. a)}\\
+		\includegraphics[width=4 cm]{zwgl403}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth}
+		\noindent{\bf Task 4. b)}\\
+		The same current flows through both light bulbs.
+		\includegraphics[width=4 cm]{zwi403}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth}
+		\noindent{\bf Task 4. c)}\\
+		\includegraphics[width=4 cm]{zwu403}
+	\end{minipage}
+	
+	\noindent{\bf Task 5. a)}\\
+	The energy stored in this battery is:
+	$$ E_{el} = \SI{12}{\volt}\cdot \SI{3,0}{\ampere\hour} =\SI{36}{\watt\hour}$$
+	The operating time is therefore:
+	$$ P = {E_{el} \over t} \quad \Rightarrow \quad t = {E_{el} \over P} = {\SI{36}{\watt\hour} \over \SI{24} {\watt}} =
+	\SI{1,5}{\hour}$$
+	
+	\noindent{\bf Task 5. b)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		E_{pot} &=& m\cdot g \cdot h = E_{el} &|:m \quad |:g\\
+		{E_{el} \over m\cdot g } & = & h \\
+		h & = & {24\cdot \SI{3600}{\watt\second} \over \SI{105}{\kilogram} \cdot \SI{9,81}{\meter\over {\second^2}}} \\
+		h & = & \SI{83}{\meter}
+	\end{array}
+	$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p9eleL403/ae403.pdf}{task sheet}
+	\end{center}
+	
+	
+\end{document}

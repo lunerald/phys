@@ -1,0 +1,118 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent
+	\begin{minipage}{0.4\textwidth}
+		\noindent{\bf Task 1. a)}\\
+		\includegraphics[width=7 cm]{della106}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 1. b)}\\
+		The linear expansion coefficient is calculated with:
+		$$\alpha = {\Delta l \over l_0 \cdot \Delta \vartheta}$$
+		\begin{tabular}{|cccc|}
+			\hline
+			$\vartheta$ to $\SI{}{\celsius}$ & 10 & 15 & 20 \\
+			$\Delta l$ to $\SI{}{\milli\meter}$ & 0.3 & 0.6 & 0.7 \\
+			$\alpha$ in $\SI{}{\kelvin^{-1}}$& $3.0\cdot 10^{-5}$ & $4.0\cdot 10^{-5}$ & $3.5 \cdot 10^{-5}$\\
+			\hline
+			$\vartheta$ to $\SI{}{\celsius}$ & 28 & 35 & 40\\
+			$\Delta l$ to $\SI{}{\milli\meter}$ & 0.9 & 1.3 & 1.5 \\
+			$\alpha$ in $\SI{}{\kelvin^{-1}}$ & $3.2\cdot 10^{-5}$ & $3.7\cdot 10^{-5}$ & $3.8 \cdot 10^{-5}$\\
+			\hline
+		\end{tabular}
+		\vspace{0.5 cm}
+		
+		The mean is: $\alpha = \SI{3.5e-5}{\kelvin^{-1}}$
+	\end{minipage}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 2.}\\
+	The following applies to the increase in volume of gasoline:
+	$$\Delta V_B = V \cdot \gamma_{Gasoline} \cdot \Delta \vartheta = 60~l \cdot 0.00106~{ 1 \over \SI{}{\celsius}} \cdot \SI{25} {\celsius} = 1.59~l$$
+	The tank also increases in capacity:
+	$$\Delta V_T = V \cdot \gamma_{Steel} \cdot \Delta \vartheta = 60~l \cdot 0.000036~{ 1 \over \SI{}{\celsius}} \cdot \SI{25} {\celsius} = 0.054~l$$
+	The amount of gasoline overflowing is the difference:
+	$$V=\Delta V_B- \Delta V_T=1.54~l$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 3.}\\
+	When immersed, the glass bulb first heats up and becomes more voluminous. The still cold liquid inside the column recedes slightly before it also warms up and expands.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 4. a)}\\
+	The cooler water in leg A is now heavier than the rest. It sinks down, then to the right. At the top, warmer water flows from the left. A counterclockwise circulation occurs in the pipe system.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 4. b)}\\
+	Due to the anomaly of the water, it is densest at $\SI{4}{\celsius}$. As it cools further to $\SI{1}{\celsius}$, it expands again and consequently becomes lighter again. This counteracts the circulation; it comes to a standstill.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 5. a)}\\
+	Gay-Lussac's law states that the volume of an ideal gas is proportional to its temperature:\\
+	$V \sim T $ or more precisely
+	$$ V = V_0\cdot (1+ {T \over \SI{273,15}{\kelvin}})\qquad (T ~in~\SI{}{\kelvin}) $$
+	This only applies if the pressure remains constant.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 5. b)}\\
+	According to the Boyle-Mariotte law, the pressure of an ideal gas is inversely proportional to the volume:
+	$$ p \sim {1 \over V} \quad \textnormal{or} \quad p \cdot V = const.$$
+	This product is therefore also proportional to the temperature. We use $R$ as a constant:
+	$$ p \cdot V = R \cdot T $$
+	This is the general gas equation.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 6.}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{p_1 \cdot V_1 \over T_1} &=& {p_2 \cdot V_2 \over T_2} & |: p_2 \cdot T_2 \\
+		{p_1 \cdot V_1 \cdot T_2 \over p_2 \cdot T_1} &=& V_2 \\
+		V_2 &=& {\SI{1e5}{\pascal} \cdot \SI{1,2}{\meter^3} \cdot \SI{223}{\kelvin} \over \SI{264e2}{\pascal } \cdot \SI{291}{\kelvin}}\\
+		V_2 &=& \SI{3,5}{\meter^3}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 7. a)}\\
+	The speed of the particles increases. $\Rightarrow$ The kinetic energy increases.
+	The distance between the particles does not change $\Rightarrow$ The potential energy of the particles remains the same.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 7. a)}\\
+	The distance between the particles increases. $\Rightarrow$ The potential energy increases. The speed of the particles does not change $\Rightarrow$ The kinetic energy of the particles remains the same.
+	\vspace{0.5 cm}
+	
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p9thdL106/ae106.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

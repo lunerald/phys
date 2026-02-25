@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	From the energy approach $E_{pot}=E_{kin}$ follows for the speed of the ball
+	at point $B$:
+	$$v_x=\sqrt{2gy}=\sqrt{2\cdot \SI{9,81}{\meter\over{\second^2}}}\cdot \SI{1,0}{\meter}= \SI{4,4}{\meter\over\second}$$
+	This is also the horizontal speed.
+	We get the fall duration $t$ with:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		
+		y&=&{1\over 2}gt^2 \\
+		t&=& \sqrt{2y\over g} \\
+		t&=& \sqrt{2\cdot \SI{1.0}{\meter} \over \SI{9.81}{\meter\over{\second^2}}} & = \SI{0.45 }{\second}
+	\end{array}
+	$$
+	The throwing distance $x$ is then:
+	
+	$$x=v_x \cdot t = \SI{4,4}{\meter\over\second}\cdot \SI{0.45}{\second} = \SI{2,0}{\meter}$$
+	
+	\noindent{\bf Task 1. b)}\\
+	In general the following then applies:
+	$$x(y)=v_x \cdot t =\sqrt{2gy}\cdot \sqrt{2y\over g} = \sqrt{4gy^2\over g}= 2y$$
+	The throwing distance always corresponds exactly to the height 2y.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. c)}\\
+	The throw distance is exactly the same on the moon because it is independent of $g$.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	The horizontal velocity is $v_x=\SI{50}{\meter\over \second}$
+	The fall time is:
+	$$t= \sqrt{2h\over g}=\SI{6,4}{\second}$$
+	So the drop distance is:
+	$$x=v_x\cdot t = \SI{50}{\meter\over \second}\cdot \SI{6,4}{\second} = \SI{320}{\meter}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 3.}\\
+	The fall time is:
+	$$t= \sqrt{2h\over g}=\sqrt{2\cdot \SI{0.020}{\meter}\over \SI{9.81}{\meter\over {\second^2}}} =\SI{0.064}{\second}$$
+	The shooting distance was:
+	$$x=v_x\cdot t = \SI{310}{\meter}\cdot\SI{0.064}{\second}=\SI{20}{\meter}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 4. a)}\\
+	Horizontal distance:
+	$$x=\SI{0.134}{\meter}-{1\over 2}\cdot \SI{0.043}{\meter}=\SI{0.113}{\meter}$$
+	Vertical fall distance:
+	$$y={1\over 2}\cdot \SI{0.043} = \SI{0.022}{\meter}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 4. b)}\\
+	This corresponds to a fall time of:
+	$$t=\sqrt{2y\over g}= \SI{0.067}{\second}$$
+	For the horizontal speed $v_x$ follows:
+	$$v_x={x\over t}={\SI{0.113}{\meter}\over \SI{0.067}{\second}}=\SI{1.7}{\meter\over \second}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 5.}\\
+	The horizontal distance to be overcome in flight is:
+	$$x=\SI{2.0}{\meter}+{\SI{14}{\meter}\over \tan{\SI{75}{\degree}}} =\SI{5.8} {\meter} $$
+	The fall time is:
+	$$t=\sqrt{2h\over g}=\sqrt{2\cdot \SI{14}{\meter}\over \SI{9,81}{\meter\over {\second^2}}} =\SI{1,7}{\second}$$
+	This means that the horizontal speed is:
+	$$v_x={x\over t}={\SI{5,8}{\meter}\over \SI{1,7}{\second}}=\SI{3,4}{\meter\over \second}$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p9wawL074/ae074.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+% Uncomment the following line to allow the usage of graphics (.png, .jpg)
+\usepackage[pdftex]{graphicx}
+% Allow the usage of utf8 characters
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+{\bf Formeln umstellen, Einheitenumrechnungen}
+\begin{enumerate}[1.]
+{\bf \item Vereinfache. Vermeide Doppelbrüche}
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{3 cm}p{3 cm}p{3 cm}p{3 cm}p{3 cm}}
+	a) $ { \SI{}{\kilogram\cdot{\meter\over \second^2}} \over \SI{}{\kilogram}} $ & b) $\sqrt{\SI{}{\kilogram} \over \SI{}{\kilogram\over {\second^2}} }$ & c) $ \SI{}{({\meter\over \second})}^2 \cdot \left({\SI{}{\meter} \over \SI{}{\meter\over \second}}\right)^2$ & d) $ {\SI{}{{\meter^3}\over \kilogram\cdot{\second^2}} \cdot \SI{}{\kilogram^2} \over \SI{}{\meter^2}}$ & e) ${\SI{}{\kilogram} \cdot \left(\SI{}{\meter\over \second}\right)^2 \over \SI{}{\meter}}$\\ 
+	f) ${ \SI{}{\ampere\second} \over \SI{}{\volt\meter}} \cdot {\SI{}{{\meter^2}\over \meter} }$ & g) $ \SI{}{\volt\second\over \ampere\meter} \cdot \SI{}{\ampere\over \meter}$ & h) $\SI{}{\meter} \cdot \sqrt{ \SI{}{\meter\over {\second^2}} \over\SI{}{\meter} }$ & i) ${\SI{}{\kilogram\cdot{\meter\over \second}}\over \SI{}{\coulomb} \cdot {\SI{}{\kilogram\cdot{\meter^2\over \second^2}} \cdot \SI{}{\second} \over \SI{}{\coulomb\cdot\meter^2}}}$ & j) $\sqrt{\SI{}{\coulomb} \cdot {\SI{}{\kilogram\cdot{\meter^2\over \second^2}}} \over \SI{}{\coulomb\cdot\kilogram}}$\\
+	
+\end{tabular}
+ 
+{\bf \item Löse nach den Variablen in der Klammer auf}
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{5.5 cm}p{5.5 cm}p{5.5 cm}}
+	a) $ {F=m\cdot a } \quad(a)$ & b) $T=2 \pi \cdot \sqrt{{m\over D}}\quad(m; D)$ & c) $ s = {1 \over 2} \cdot g \, t^2 \quad (t; g)$ \\
+	 d) $F={G \cdot M \cdot m \over r^2} \quad (r; m)$ &
+	e) $m\cdot g \cdot h ={1\over 2}m\cdot v^2 \quad (v; h)$ & f) $C= \varepsilon_0 \cdot \varepsilon_r \cdot {A \over d} \quad(\varepsilon_r; d)$ \\
+	 g) $B= \mu_0 \cdot \mu_r \cdot N \cdot {I \over l}\quad (\mu_r; I)$ & 
+	 h) $ {m \cdot v^2 \over r}= m \cdot g \quad (v) $ & i)$ {m \cdot v^2 \over r} = e \cdot v \cdot B \quad (r) $ \\
+	 j) ${1 \over 2} m \cdot v^2 = e \cdot U \quad (v)$
+\end{tabular}
+
+{\bf \item Löse nach $r$ auf}\\
+$$ {Q_1 \over Q_2}= {(d-r)^2 \over d^2}$$
+
+{\bf \item Löse nach $u$ auf}\\
+$$m_1v_1 + m_2v_2 = m_1u + m_2u$$
+
+{\bf \item Löse nach $T_m$ auf}\\
+$$c\cdot m_1 \cdot(T_1-T_m) + c \cdot m_2 \cdot ( T_2 - T_m) = 0 $$
+
+\end{enumerate} 
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Zur Lösung bitte \href{https://www.okuyakl.de/phys/p9fouL081/ll081.pdf}{hier klicken} oder den QR-Code scannen.\\
+	Weitere Arbeitsblätter gibt es unter 
+	
+	\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr081}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+	\end{minipage}}
+
+\end{document}
+
