@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{2 cm}|p{2 cm}|p{2 cm}|p{4.5 cm}|p{4.5 cm}|}
+		\hline
+		Character & prefix & power of 10 & factor & number word\\
+		\hline
+		E & Exa & $10^{18}$ & 1 000 000 000 000 000 000 & Quintillion\\
+		\hline
+		P & Peta & $10^{15}$ & 1 000 000 000 000 000 & Quadrillion \\
+		\hline
+		T & Tera & $10^{12}$ & 1 000 000 000 000 & Trillion\\
+		\hline
+		G & Giga & $10^9$ & 1 000 000 000 & Billion \\
+		\hline
+		M & Mega & $10^6$ & 1 000 000 & Million \\
+		\hline
+		k & Kilo & $10^3$ & 1000 & Thousand \\
+		\hline
+		h & hecto & $10^2$ & 100 & hundred \\
+		\hline
+		d & deci & $10^{-1}$ & 0.1 & tenths \\
+		\hline
+		c & centi & $10^{-2}$ & 0.01 & hundredths\\
+		\hline
+		m & milli & $10^{-3}$ & 0.001& thousandths\\
+		\hline
+		$\mu$ & micro & $10^{-6}$ & 0.000 001 & millionths\\
+		\hline
+		n & Nano & $10^{-9}$ & 0.000 000 001 & billionths\\
+		\hline
+		p & pico & $10^{-12}$ & 0.000 000 000 001 & trillionth\\
+		\hline
+		f & femto & $10^{-15}$& 0.000 000 000 000 001 & quadrillionth\\
+		\hline
+		a & Atto & $10^{-18}$ & 0.000 000 000 000 000 001 & quintillionth\\
+		\hline
+	\end{tabular}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	\renewcommand{\arraystretch}{2.2}
+	\begin{tabular}{|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|}
+		\hline
+		Unit & Quantity Word/Number & Description & Short Form & Power of 10 \\
+		\hline
+		J (Joule) & 5.1 quadrillion & 5.1 petajoules & 5.1 PJ & $\SI{5.1e15}{\joule}$ \\
+		\hline
+		m (meter) & 0.000 000 016 & 16 nanometers & 16 nm & $\SI{16e-9}{\meter}$\\
+		\hline
+		W (Watt) & 800 000 000 & 0.8 Gigawatt & 0.8 GW & $\SI{0.8e9}{\watt}$\\
+		\hline
+		l (liter) & 420 & 4.2 hectoliters & 4.2 hl & $4.2 \cdot 10^2$ l \\
+		\hline
+		g (gram) & 70 millionths & 70 micrograms & $\SI{70}{\micro\gram}$ & $\SI{70e-6}{\gram} $ \\
+		\hline
+	\end{tabular}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p8zpzL084/ae084.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

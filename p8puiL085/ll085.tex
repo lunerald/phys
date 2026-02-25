@@ -1,0 +1,86 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1.}\\
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{0.5 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|}
+	\hline
+	& Wasser\-kocher & LED      & Elektroauto &  Notebook   & Router      & Wasser\-kraftwerk & Energie\-sparlampe & Gewitter\-Blitz\\
+	\hline
+	U & 230 V       & 2,5 V      &  650 V     &     20 V    & 12 V        &  110 kV           &        230 V       & $\SI{1e8}{\volt}$\\
+	\hline
+	I &  5,22 A     & 20 mA      &      123 A &    3,25 A   &  3,3 A      &  180 A            &     30 mA          & $\SI{1e5}{\ampere}$\\
+	\hline
+	P & 1200 W      &  50 mW     &      80 kW &    65 W     &  40 W       & 20 MW             &       7 W          & $\SI{1e13}{\watt}$\\
+	\hline
+	R &$\SI{44,1}{\ohm}$&$\SI{125}{\ohm}$&$\SI{5,3}{\ohm}$&$\SI{6,15}{\ohm}$&$\SI{3,6}{\ohm}$&$\SI{0,6}{\kilo\ohm}$& $\SI{7,6}{\kilo\ohm}$ & $\SI{1e3}{\ohm}$\\
+	\hline
+\end{tabular}
+\vspace{1 cm}
+
+{\bf Aufgabe 2.}\\
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|}
+	\hline
+	& $U_p$ & $U_s$ & $N_p$ & $N_s$ & $I_p$  & $I_s$ \\
+	\hline
+	Netzteil & 230 V & 12 V  & 500   &  26     & 0,12 A & 2,3 A\\
+	\hline
+	Schweißgerät & 380 V  & 50 V  & 610   & 80    &  21 A    & 160 A \\
+	\hline 
+	Hochspan\-nungstrafo & 15 kV  & 380 kV & 12  &  300     & 500 A  & 20 A \\
+	\hline
+\end{tabular}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. a)}\\
+$$t= {Q \over I} = {\SI{4}{\ampere\hour} \over \SI{2}{\ampere}}=\SI{2}{\hour}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. b)}\\
+$$I= {Q \over t}={\SI{4,0}{\ampere\hour} \over \SI{48}{\hour}}=\SI{83}{\milli\ampere}$$ 
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. c)}\\ 
+12 Minuten sind ${1\over 5}\SI{}{\hour}$:
+$$Q=I\cdot t = \SI{0,020}{\ampere} \cdot {1\over 5}\SI{}{\hour} = \SI{4,0}{\milli\ampere\hour}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. d)}\\
+Die Betriebsstromstärke ist:
+$$I={P\over U}={\SI{6000}{\watt}\over \SI{60}{\volt}}=\SI{100}{\ampere}$$
+Daraus folgt für die Kapazität:
+$$Q=I\cdot t = \SI{100}{\ampere} \cdot \SI{1}{\hour} = \SI{100}{\ampere\hour}$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/phys/p8puiL085/aa085.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

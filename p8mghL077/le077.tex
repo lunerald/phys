@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|p{1.7 cm}|}
+		\hline
+		& elevator & mountain hiker & e-bike & Danube barrage & Beat Lukas & New Year's Eve rocket & Ariane 5 \\
+		\hline
+		Mass $m$ &$\SI{450}{\kilogram}$ &$\SI{75}{\kilogram}$ &$\SI{105}{\kilogram}$ &$\SI{340}{\tonne }$ &$\SI{0.25}{\kilogram}$ &$\SI{80}{\gram}$ &$\SI{780}{\tonne}$ \\
+		\hline
+		Height $h$ &$\SI{40}{\meter}$ &$\SI{950}{\meter}$ &$\SI{220}{\meter}$ &$\SI{7,5}{ \meter}$ &$\SI{3.5}{\meter}$ &$\SI{50}{\meter}$ &$\SI{500}{\kilo\meter}$ \\
+		\hline
+		$W_{hub}$ &$\SI{177}{\kilo\joule}$ &$\SI{700}{\kilo\joule}$ &$\SI{226}{\kilo\joule}$ &$ \SI{25}{\mega\joule}$ &$\SI{8.6}{\joule}$ &$\SI{39}{\joule}$ &$\SI{3.8}{\tera \joule}$ \\
+		\hline
+		Time $t$ &$\SI{30}{\second}$ &$\SI{3.5}{\hour}$ &$\SI{40}{\minute}$ &$\SI{1.0}{\second}$ &$\SI{0.85}{\second}$ &$\SI{5.0}{\second}$ &$\SI{10}{\minute}$ \\
+		\hline
+		Power $P$ &$\SI{5,9}{\kilo\watt}$ &$\SI{56}{\watt}$ &$\SI{94}{\watt}$ &$\SI{25 }{\mega\watt}$ &$\SI{10}{\watt}$ &$\SI{7.8}{\watt}$ &$\SI{6.3}{\giga\watt}$ \\
+		\hline
+		
+	\end{tabular}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{p{3 cm}p{3 cm}p{3 cm}p{3 cm}}
+		a) $P_{auf}=\SI{6,6}{\kilo\watt}$ &b) $W_{auf}=\SI{2,3}{\kilo\joule}$ &c) $\eta= $ 11\% &d) $P_{nutz}=\SI{20}{\mega\watt}$ \\
+	\end{tabular}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p8mghL077/ae077.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

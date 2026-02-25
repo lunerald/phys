@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+Leistung ist die pro Zeiteinheit verrichtete Arbeit.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. b)}\\
+Nur wenn die gleiche Arbeit in der gleichen Zeit verrichtet worden ist, ist die erbrachte Leistung die gleiche.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. c)}\\
+Man fasst die Verrichtete Arbeit in eine geeignete Einheit und teilt diese durch die dafür benötigte Zeit. Wenn A mehr Arbeit pro Zeit verrichtet als B, so leistet A folglich mehr.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 2.}\\
+Wählt man als Energieeinheit die Kilowattstunden ($kWh$), so erhält man (fast) ohne zu rechnen: 
+$$W = P \cdot t = \SI{150}{\kilo\watt} \cdot \SI{1}{\hour} = \SI{150}{\kilo\watt\hour}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. a)}\\
+\begin{itemize}
+	\item Da die Umwandlung von zugeführter Energie $W_{zu}$ in Nutzenergie $W_{nutz}$ praktisch nie vollständig vonstatten geht, ist $W_{nutz} < W_{zu}$ und somit der Quotient $\eta = {W_{nutz} \over W_{zu}} < 1$ 
+	\item Hiermit ist der Wirkungsgrad des Verbrennungsmotors gemeint, welcher aus 100 Einheiten chemischer Energie des Treibstoffs 40 Einheiten mechanische Energie (Lageenergie, kinetische Energie) machen kann. Die restlichen 60 Einheiten gehen als Wärmeenergie (Verbrennungswärme, Reibungswärme) ,,verloren". Man kann mit dieser Wärme auch den Fahrgastraum heizen, dadurch zählt ein Teil dieser Abwärme zur Nutzenergie und somit erhöht sich der Wirkungsgrad.
+\end{itemize}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. b)}\\
+Die Nutzenergie $W_{nutz}$ ist hier die Lageenergie:
+$$W_{nutz} = m\cdot g \cdot h = \SI{90}{\kilo\gram} \cdot \SI{9,81}{\meter\per\second^2} \cdot \SI{25}{\meter} = \SI{22}{\kilo\joule}$$
+Der Wirkungsgrad des Krans ist hierbei dieser Wert, geteilt durch die aufgewendete Energie $W_{zu}$:
+$$ \eta = {W_{nutz} \over W_{zu}} = {\SI{22}{\kilo\joule} \over \SI{25}{\kilo\joule}}= 0,88 = 88\%$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. c)}\\
+Die Säge verändert ihre Höhe in dieser Zeit nicht, darum verrichtet der Kran auch gar keine Arbeit. 
+
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 4.}\\
+Aus der Formel für die Hubarbeit folgt: 
+$$W=F_G\cdot h \quad \Rightarrow \quad h = {W \over F_G} = {\SI{12000}{\joule} \over \SI{1500}{\newton}} = \SI{8}{\meter}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 5. a)}\\
+Die Energie berechnet sich mit der Leistung mal die Sonnenscheindauer:
+$$W_{auf} = \SI{1000}{\watt} \cdot 12 \cdot 60 \cdot \SI{60}{\second} = \SI{4,32e7}{\joule}\approx \SI{4e7}{\joule}$$ 
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 5. b)}\\
+Wir multiplizieren das Ergebnis mit dem Wirkungsgrad:
+$$W_{nutz}= \eta \cdot W_{auf} = 0,175 \cdot \SI{4,32e7}{\joule} = \SI{7,56e6}{\joule} \approx \SI{8e6}{\joule}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 6. a)}
+Die Pumpe hebt das Wasser an, sie wandelt elektrische Energie in Lageenergie (=Potentielle Energie) um.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 6. b)}
+Wir setzen elektrische Leistung gleich dem Quotienten aus Arbeit und Zeit:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+P_{el} &=& {W_{pot} \over t} &|\cdot t\\
+P_{el} \cdot t &=& m g h &| :(mg) \\
+h &=& {P_{el} \cdot t \over m g } &= 
+{\SI{2000}{\watt} \cdot \SI{240}{\second} \over \SI{5000}{\kilogram} \cdot \SI{9,81}{\meter\per\second^2}}\\
+h &=& \SI{9,8}{\meter}   
+\end{array}
+$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/phys/p8arbL401/aa401.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

@@ -1,0 +1,98 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	Masses are inert, which means that they only change their state of motion when a force acts on them. For example, if a mass is at rest, it does not start moving "on its own" - this would require a force.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. b)}\\
+	The reason why the pedal force does not lead to the cyclist's ever-increasing acceleration is because frictional forces, mainly air resistance, counteract it.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. c)}\\
+	First, the shoe moves downwards with the snow stuck to it. When it hits the ground, the shoe slows down significantly. However, due to inertia, the snow “wants” to move further downwards and separates from the shoe.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 2. a)}\\
+	We calculate the forces occurring step by step from left to right. The force on the right lever arm is:
+	$$F_2=F_G \cdot {a_1 \over a_2}=\SI{1500}{\newton} \cdot {\SI{1.50}{\meter} \over \SI{2.50}{\meter} }=\SI{900}{\newton}$$
+	The rope force $F_s$ is half of that, i.e. $$F_s=\SI{450}{\newton}$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 2. b)}\\
+	According to the lever law, the force on the crank is:
+	$$F_k = F_s \cdot {a_s \over a_k}=\SI{450}{\newton} \cdot {\SI{0.10}{\meter} \over \SI{0.40}{\meter} }=\SI{112.5}{\newton}$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 2. c)}\\
+	Half of the force $F_2$ acts on the cable anchorage A. So we bet
+	$$F_2=2\cdot \SI{600}{\newton}= \SI{1200}{\newton}$$
+	Now we calculate the lever arm $a_1$:
+	$$a_1 = a_2 \cdot {F_2 \over F_G}=\SI{2.50}{\meter}\cdot {\SI{1200}{\newton}\over \SI{1500}{\newton}}= \SI{2,0}{\meter}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 3. a)}\\
+	The force on the nail is:
+	$$ F_2 = {{a_1 \over a_2} \cdot F_1} = {\SI{0.15}{\meter} \over \SI{0.035}{\meter}} \cdot \SI{180}{\newton } = \SI{771}{\newton}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 3. b)}\\
+	Torque left:
+	$$ M_1 = F_1 \cdot a_1 = \SI{6.0}{\newton} \cdot \SI{0.030}{\meter}=\SI{0.18}{\newton\meter} $$
+	Torque right:
+	$$ M_2 = F_2 \cdot a_2 = \SI{3.0}{\newton} \cdot \SI{0.080}{\meter} = \SI{0.24}{\newton\meter} $$
+	The remaining moment is the difference of that, so
+	$$ M_v = (0.18-0.24)\SI{}{\newton\meter} = \SI{0.06}{\newton\meter}$$
+	\begin{minipage}{0.5\textwidth}
+		This can be canceled out by an additional force that satisfies the following equation:
+		$$ F_3 \cdot a_3 = \SI{0.06}{\newton\meter}$$
+		So e.g.
+		$$F_3 =\SI{3}{\newton}; \quad a_3 =\SI{0.02}{\meter}$$
+		For example, this force must act to the right of the bearing and be directed upwards, as the moment on the right is larger and must therefore be weakened.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width= 6 cm]{hebgg406}
+	\end{minipage}
+	
+	
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 4. a)}\\
+	The loose roller halves the force, while the fixed roller only redirects it. So the force at point C is:
+	$$ F = {\SI{100}{\newton} \over 2} = \SI{50}{\newton}$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 4. b)}\\
+	At the suspension point A, half the weight acts, i.e. $F_A=\SI{50}{\newton}$, at point B this half force acts twice, i.e. $F_B=\SI{100}{\newton}$.
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p8mecL406/ae406.pdf}{task sheet}
+	\end{center}
+	
+\end{document}
