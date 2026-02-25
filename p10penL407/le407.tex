@@ -1,0 +1,132 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	
+	\noindent {\bf Task 1. a)}\\
+	\begin{minipage}{0.4\textwidth}
+		First we convert the frequencies into oscillation periods using the formula $T={1\over f}$,
+		then we plot the oscillation period $T$ over the thread length $l$:
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\textwidth}
+		\includegraphics[width=5 cm]{pendia119}
+	\end{minipage}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 1. b)}\\
+	From the diagram we read: $$T=\SI{1.5}{\second} \quad \Rightarrow \quad l=\SI{0.57}{\meter}$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 1. c)}\\
+	For small deflections, the oscillation period only depends on the length of the thread, not on the mass of the attached weight.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 1. d)}\\
+	We calculate: (N=number of oscillations)
+	$$N=\SI{24}{\second} \cdot \SI{0.5}{\hertz} = 12 $$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 2. a)}\\
+	With a harmonious vibration...
+	
+	\begin{itemize}
+		\item ...the period of oscillation is always the same, regardless of the amplitude.
+		\item ...the restoring force is proportional to the deflection.
+	\end{itemize}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2. b)}\\
+	1st option; Calculation from the mass and the spring hardness:
+	$$ T = 2 \pi \cdot \sqrt{m \over D} = 2 \pi \cdot \sqrt{\SI{0.44}{\kilogram} \over \SI{12}{\newton\over\ meter}} = \SI{1,2}{\second}$$
+	2nd option; Calculation from the number of oscillations per unit of time:
+	$$ T= {\SI{12}{\second} \over 10} = \SI{1,2}{\second}$$
+	The results are the same; the frequency is in both cases
+	$$f= {1 \over T}= \SI{0.83}{\hertz}$$
+	
+	\newpage
+	\noindent{\bf Task 2. c)}\\
+	\begin{minipage}{0.5\textwidth}
+		The oscillation begins during the downward movement through the rest position. It follows: $v(t)$ is a cosine function with a negative sign:
+		$$v(t)= - \SI{0,30}{\meter\over\second} \cdot \cos{\left( {2\pi \over \SI{1,2}{\second}}\ cdot t \right)}$$
+		$$v(\SI{7.9}{\second})=\SI{-0.23}{\meter\over\second}$$
+		The maximum acceleration occurs at the reversal points when the speed is zero.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=6 cm]{scwv94.pdf}
+	\end{minipage}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2. d)}\\
+	The law of conservation of energy applies. The stress energy at the reversal points is equal to the kinetic energy at $v_{max}$:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{1 \over 2} D \cdot \hat{x}^2 &=& {1 \over 2} m \cdot v_{max}^2 & |\cdot 2 \qquad : D \\
+		\hat{x}^2 &=& {m \over D} \cdot v_{max}^2 & | \sqrt{\qquad}\\
+		\hat{x} &=& \sqrt{m \over D} \cdot v_{max} \\
+		\hat{x} &=& \sqrt{\SI{0.44}{\kilogram} \over \SI{12}{\newton\over\meter}} \cdot \SI{0.3}{\meter \over\second} &=\SI{0.057}{\meter} \approx \SI{6}{\centi\meter}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2. e)}\\
+	Hooke's law applies to spring force and the law of inertia applies to acceleration:
+	$$F = - D \cdot \hat{x} = m \cdot a $$
+	$$ \Leftrightarrow a= -{D \over m} \cdot \hat{x} = {\SI{12}{\kilogram\over {\second^2}} \over \SI{0.44}{\ kilogram}}\cdot \SI{0.057}{\meter} = \SI{-1.6}{\meter \over{ \second^2}}$$
+	The magnitude of the acceleration is $\SI{1,6}{\meter \over{ \second^2}}$; it is directed downwards because the sign is negative.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2. f)}\\
+	We convert the following relationship according to the spring hardness:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		(*) \qquad T &=& 2 \pi \cdot \sqrt{m\over D} & |: 2 \pi \\
+		{T \over 2 \pi} &=& \sqrt{m\over D} & |()^2 \\
+		{T^2 \over 4 \pi^2} &=& {m\over D} & |()^{-1} \\
+		{4 \pi^2 \over T^2} &=& {D\over m} & |\cdot m \\
+		{4 \pi^2 \over T^2}\cdot m &=& D & = \SI{7,7}{\newton\over\meter}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 3. a)}\\
+		According to $(*)$:\\
+		$ T \sim \sqrt{m} \Rightarrow$ Doubling the oscillation period is achieved by quadrupling the mass.
+		\vspace{0.5 cm}
+		
+		\noindent{\bf Task 3. b)}\\
+		$F \sim D \Rightarrow$ Half force means half spring hardness.
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\begin{center}
+			\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+			
+			Here you can go back to the \href{https://www.okuyakl.de/phys/p10penL407/ae407.pdf}{task sheet}
+		\end{center}
+	\end{minipage}
+\end{document}

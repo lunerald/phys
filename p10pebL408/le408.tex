@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\begin{enumerate}
+		
+		\item
+		\begin{enumerate}[a)]
+			\item An oscillation is damped if the deflection = amplitude decreases over time and with the number of oscillations and finally becomes zero at some point. This is the normal case with mechanical vibrations.
+			
+			\item The amplitude is the amount of the maximum deflection; for mechanical vibrations it usually has the unit of a length.
+		\end{enumerate}
+		
+		\item
+		The simple relationship between frequency $f$, duration $T_N$ and number $N$ of oscillations applies:
+		$$f={N \over T_N}= { 20 \over \SI{5}{\second}}= \SI{4}{\hertz}$$
+		
+		\item
+		\begin{enumerate}[a)]
+			
+			\item The formula for calculating the oscillation period from $m$ and $D$ is:
+			$$T = 2 \pi \cdot \sqrt{m \over D} \qquad (*)$$
+			With the values used, this results in:
+			$$T = 2 \pi \cdot \sqrt{\SI{0.200}{\kilogram} \over \SI{1.9}{\newton\over\meter}}=\SI{2.0}{\second }$$
+			Unit check:
+			$$ 1 \cdot \sqrt{ \SI{}{\kilogram \over {\kilogram \cdot \meter \cdot \second^{-2}\cdot \meter^{-1}}}}= \sqrt{1 \over \SI{}{\second^{-2}}}= \SI{}{\second} $$
+			The frequency is simply the reciprocal of the oscillation period:
+			$$f = {1 \over T} = \SI{0.5}{\hertz}$$
+			
+			
+			\begin{minipage}{0.5\textwidth}
+				\item
+				The pendulum body is marked in the sketch opposite with a point at which it is located at time $t=\SI{3.5}{\second}$. You can see that its deflection is zero. It came from above and moves downwards through the rest position at maximum speed.
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.4\textwidth}
+				\includegraphics[width=5 cm]{micos127.pdf}
+			\end{minipage}
+		\end{enumerate}
+		
+		\item
+		According to $(*)$: $T \sim \sqrt{m}$ \quad and \quad $T \sim {1 \over \sqrt{D}}$.
+		This means that if we want to halve T, we have to divide the mass by four or quadruple the spring stiffness.
+		
+		\item
+		\begin{enumerate}[a)]
+			\item The time that the pendulum takes from the lower to the upper reversal point is just half the duration of a full swing back and forth. So is the period of oscillation
+			$$T = 2 \cdot \SI{2}{\second} = \SI{4}{\second}$$
+			
+			\item The following applies: $$T=2\pi\sqrt{m\over D}$$
+			$$\Rightarrow \qquad m= D \cdot {T^2 \over 4\pi^2}=\SI{0.49}{\newton\per\meter}\cdot {(\SI{4}{\second })^2\over 4 \pi^2}=\SI{0.20}{\kilogram}$$
+			\item $$F=D\cdot s=\SI{0.49}{\newton\per\meter}\cdot \SI{0.12}{\meter} =\SI{59}{\milli\newton }$$
+			$$a={F\over m} = \SI{0.19}{\meter\per\second^2}$$
+			\item The speed is greatest in the passes through the rest position. This happens the first time after $t_1={T \over 4} = \SI{1}{\second}$, the second time half an oscillation later, at $t_2= {3\cdot T \over 4}= \SI{3}{\second}$. The third time is half a period later, i.e. at $t_3= {5\cdot T \over 4}= \SI{5}{\second}$
+			
+		
+		\end{enumerate}
+		
+			\noindent{\bf 6.)}\\
+		In a harmonic oscillation, the oscillation period and thus the frequency is, as shown in $(*)$, not a function of the amplitude. So the frequency is always here
+		$$f = {1 \over T}={ 1 \over \SI{0.4}{\second}} = \SI{2.5}{\hertz}$$
+		
+		\noindent {\bf 7.)}\\
+		We read the amplitude from both y-axes; it is $\hat{y}=\SI{2}{\centi\meter}$.
+		The wavelength can be determined from the diagram on the right, it is $\lambda=\SI{0.5}{\meter}$.
+		The oscillation period can be determined from the diagram on the left with $T=\SI{0.2}{\second}$. The frequency is therefore $f = {1 \over \SI{0,2}{\second}} = \SI{5}{\hertz}$.
+		The propagation speed is the wavelength divided by the oscillation period:
+		$$c={\lambda \over T}= {\SI{0.5}{\meter} \over \SI{0.2}{\second}}= \SI{2.5}{\meter\over \second}$$
+	\end{enumerate}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p10pebL408/ae408.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

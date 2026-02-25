@@ -1,0 +1,103 @@
+
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue} 
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+%Titel
+{\bf Aufgaben zur Festigkeitslehre }\\
+\begin{enumerate}[1.]
+
+%Aufgabe 1
+\begin{minipage}{0.48\textwidth}
+\item Zur Untersuchung der Elastizität werden Probestäbe mit dem Querschnitt $A=\SI{50}{\milli\meter^2}$ durch Anhängen verschiedener Massen belastet und die dadurch verursachte Längenänderung mit einem Dehnungsmessstreifen gemessen. Für Stahl erhält man dabei nebenstehendes Diagramm.
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\includegraphics[width=5 cm]{emodul219}
+\end{minipage}
+
+\begin{enumerate}[a)]
+\item Bestimmen Sie mit Hilfe des gegebenen Diagramms
+\begin{enumerate}[(i)]
+\item den Elastizitätsmodul von Stahl
+\item die Masse, bei welcher die elastische Formänderung $\varepsilon = \SI{10}{\micro\meter\over \meter}$ ist.
+\item die Längenänderung in mm, die ein 2,5~m langer Stahlstab gleichen Querschnitts bei einer Spannung von $\SI{4}{\newton\milli\meter^{-2}}$ erfährt.
+\end{enumerate}
+\item Zeichnen Sie in das gegebene Diagramm den Graphen für einen Werkstoff mit einem halb so großen Elastizitätsmodul 
+\end{enumerate}
+
+%Aufgabe 2
+\begin{minipage}{0.48\textwidth}
+\item Ein Stahlrohr wird bei $\SI{20}{\celsius}$ spannungslos so eingebaut, dass es nicht nachgeben kann. Durch hindurchströmende heiße Gase wird es auf $\SI{80}{\celsius}$ erwärmt. 
+\end{minipage}
+\hspace{0.7 cm}
+\begin{minipage}{0.48\textwidth}
+\includegraphics[width=5 cm]{rohr219}
+\end{minipage}
+
+Der Längenausdehnungskoeffizient beträgt $ \alpha=\SI{12e-6}{\kelvin^{-1}}$, der Elastizitätsmodul $E=\SI{2,1e5}{\newton\milli\meter^{-2}}$
+\begin{enumerate}[a)]
+\item Berechnen Sie die dabei auftretende Druckspannung im Rohr.
+\item Berechnen Sie die Druckkraft im Rohr
+\end{enumerate} 
+
+%Aufgabe 3
+\begin{minipage}{0.55\textwidth}
+\item Ein geteiltes Schwungrad wird durch zwei Schrumpfringe, die beide Nabenhälften umschließen, zusammengehalten. Die Streckgrenze des Materials beträgt $\SI{285}{\newton\milli\meter^{-2}}$, die Sicherheitszahl soll $2,0$ sein und die beiden Nabenhälften sollen mit der Kraft $F=\SI{1100}{\kilo\newton}$ zusammengehalten werden.
+\end{minipage}
+\hfill
+\begin{minipage}{0.42\textwidth}
+\includegraphics[width=5 cm]{nabe219}
+\end{minipage}
+\begin{enumerate}[a)]
+\item Berechnen Sie die notwendige Breite $b$ der Ringe
+\item Mit welchem Innendurchmesser müssen die Ringe hergestellt werden?
+\end{enumerate}
+
+%Aufgabe 4
+\begin{minipage}{0.6\textwidth}
+\item Eine Kupferbuchse und zwei starre Scheiben sind durch eine zentrale Stahlschraube 
+miteinander verbunden. Bei der Temperatur $t_0=\SI{15}{\celsius}$ wird das System spielfrei, aber ohne Vorspannung montiert. Berechnen Sie die in Büchse und Schraube auftretenden Spannungen bei einer Erwärmung auf $\SI{215}{\celsius}$. \\
+$[E_{Cu}=\SI{1,1e5}{\newton\milli\meter^{-2}}; \quad  E_{St}=\SI{2,1e5}{\newton\milli\meter^{-2}}; \quad 
+A_{St}=\SI{58}{\milli\meter^2}; \quad \alpha_{Cu}=\SI{1,65e-5}{\kelvin^{-1}}; \quad d_{ACu}=\SI{26}{\milli\meter}; 
+\quad d_{ICu}=\SI{20}{\milli\meter}]$
+\end{minipage}
+\hfill
+\begin{minipage}{0.38\textwidth}
+\includegraphics[width=4 cm]{stacu219}
+\end{minipage}
+
+%Aufgabe 5
+\item Aus einem Stahlblech mit der Zugfestigkeit $\SI{340}{\newton\milli\meter^{-2}}<R_m<\SI{440}{\newton\milli\meter^{-2}}$ und einer Dicke von 6,0~mm sollen Scheiben mit einem Durchmesser von 36~mm ausgeschnitten werden. Die Scherspannung beträgt höchstens $80\%$ der Zugfestigkeit. Berechnen Sie die maximale Druckspannung, die im Stempel des Schneidwerkzeugs wirkt.
+
+%Aufgabe 6 
+
+\end{enumerate}
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Weitere Arbeitsblätter gibt es unter 
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+\end{minipage}}
+%Ende
+\end{document}

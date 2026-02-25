@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. a)}\\
+	The desired quantities can be calculated using the formulas $P = U \cdot I$ and $U = R \cdot I$:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rccl}
+		I_1 =& { P_1 \over U} =& {\SI{75}{\watt}\over \SI{230}{\volt} }=& \SI{0.33}{\ampere} \\
+		P_2 =& U \cdot I =& \SI{230}{\volt} \cdot \SI{1.5}{\ampere} =& \SI{345}{\watt} \\
+		I_3 =& {U \over R} =& {\SI{230}{\volt} \over \SI{45}{\ohm} }=& \SI{5,1}{\ampere}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. b)}\\
+	When connecting in parallel, we add the individual currents together. Then we subtract it from the $\SI{10}{\ampere}$ that the fuse just allows through:
+	$$I_4 = \SI{10}{\ampere} - (I_1+I_2+I_3)= \SI{10}{\ampere} - \SI{0.33}{\ampere} - \SI{1.5 }{\ampere} - \SI{5,1}{\ampere} = \SI{3,1}{\ampere}$$
+	The device $G_4$ can therefore let through a maximum of $\SI{3,1}{\ampere}$, which corresponds to a power of
+	$$P= \SI{230}{\volt} \cdot \SI{3,1}{\ampere} \approx \SI{710}{\watt}.$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 2.}\\
+	“A current flows through them” means that they are connected in series.
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rccl}
+		R_1 =& {U_1 \over I} =& { \SI{9.0}{\volt} \over \SI{0.18}{\ampere}}=& \SI{50}{\ohm} \\
+		U_2 =& R_2 \cdot I =& \SI{150}{\ohm} \cdot \SI{0.18}{\ampere} =& \SI{27}{\volt}\\
+		U_{ges}=& U_1 +U_2 =& \SI{27}{\volt} + \SI{9,0}{\volt}=& \SI{36}{\volt}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 3.}\\
+	The operating current of $I_B=\SI{0.4}{\ampere}$ must not be exceeded when the device is connected to a higher voltage. The total resistance must therefore be at least:
+	$$R_{ges}={U \over I_B}=\SI{575}{\ohm}$$
+	The resistance of the device can be calculated from the given data:
+	$$R_B = {\SI{110}{\volt} \over \SI{0.4}{\ampere}}= \SI{275}{\ohm}$$
+	The following applies to the series resistor $R_V$ to be connected in series:
+	$$R_{ges}= R_B + R_V \quad \Leftrightarrow \quad R_V= R_{ges}-R_B=\SI{300}{\ohm}$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 4. a)}\\
+	The resistance $R_0$ of a conductor with length $l$ and cross-section $A$ is calculated as:
+	$$R_0= \varrho \cdot {l \over A}$$
+	Here $\varrho$ is the specific resistance, a material-dependent constant. If the new length is $2l$ and the new cross section is $3A$, then the new resistance is $R_A:$
+	$$R_A= \varrho \cdot { 2 l \over 3 A} = \underbrace{\varrho \cdot { l\over A}}_{=R_0} \cdot {2 \over 3}=R_0 \cdot {2 \over 3}$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 4. b)}\\
+	The cross-sectional area is $A=\pi r^2$. If the radius $r$ is doubled to $2r$, then A is quadrupled to $4A$ because $2^2=4$. If the length is now quadrupled, both effects cancel each other out and the resistance does not change:
+	$$R_A= \varrho \cdot { 4l \over 4 A} =\varrho \cdot { l\over A}=R_0$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 5.}\\
+	We convert the formula for the specific resistance according to the cross-sectional area $A$:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rccl}
+		R &=& \varrho \cdot {l \over A} &| \cdot A \\
+		A \cdot R &=& \varrho \cdot l &| : R \\
+		A &=& \varrho \cdot {l \over R} & =\SI{0.017}{\ohm\cdot\milli\meter^2\over \meter}\cdot {2\cdot \SI{17.5} {\meter}\over \SI{0,2}{\ohm}}\\
+		A &=& \SI{3,0}{\milli\meter^2} & = \pi \cdot r^2 \\
+		r &=& \sqrt{A \over \pi} &= \sqrt{\SI{3,0}{\milli\meter^2}\over \pi}\\
+		r &=& \SI{1,0}{\milli\meter}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 6.}\\
+	With each additional resistor connected in parallel, $R_{tot}$ becomes smaller and $I_{tot}$ becomes larger.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Exercise 7.} \\
+	For a parallel connection the following applies:\\
+	(a) The total resistance is smaller than any individual resistance:
+	$$R_{tot}<R_1 \quad {\rm and} \quad R_{tot}<R_2$$
+	(b) The larger current corresponds to the smaller resistance and vice versa:
+	$$I_1<I_2$$
+	(c) There is only one voltage:
+	$$U_1=U_2$$
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 8. a)}\\
+	For a series connection of two consumers, the operating current $I_B$ must be the same.
+	We calculate these:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcccl}
+		{\rm lamp \quad 1:} \quad I_1 &=& \SI{0,1}{\ampere}\\
+		{\rm lamp \quad 2:} \quad I_2 &=& { \SI{1,2}{\watt} \over \SI{12}{\volt}} &=& \SI{0,1}{ \ampere}\\
+		{\rm Lampe \quad 3:} \quad I_3 &=& { \SI{4,0}{\volt} \over \SI{20}{\ohm}} &=& \SI{0,2}{\ampere} \\
+		\end{array}
+		$$
+		Both lamps shine optimally if we select lamp 1 and lamp 2.
+		\vspace{0.5 cm}
+		
+		\noindent {\bf Task 8. b)}\\
+		The operating current is - as mentioned above - $I_B=\SI{0.1}{\ampere}$, the total resistance is
+		the sum of the individual resistances, or better the sum of the operating voltages...
+		$$U_{tot}=\SI{4,0}{\volt} + \SI{12}{\volt} = \SI{16}{\volt}$$
+		...divided by the operating current:
+		$$R_{ges}={ U_{ges} \over I_B}={\SI{16}{\volt}\over \SI{0,1}{\ampere}}= \SI{160}{\ohm } $$
+		\vspace{0.5 cm}
+		
+		\noindent {\bf Task 9.}\\
+		When connected in parallel, the reciprocals of the individual resistances add to the reciprocal of the total resistance:
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rcl}
+		{1 \over R_{ges}} &=& {1 \over R_2} + {1 \over R_2}\\
+		R_{tot} &=& \left({1 \over R_2} + {1 \over R_2} \right)^{-1}\\
+		R_{tot} &=& \left({1 \over \SI{100}{\ohm}} + {1 \over \SI{300}{\ohm}} \right)^{-1}\\
+		R_{ges} &=& \SI{75}{\ohm}
+		\end{array}
+		$$
+		\vspace{0.5 cm}
+		
+		\noindent {\bf Task 10.}\\
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rccl}
+		U_2 =& U_{ges}=& R_2 \cdot I_2 =& \SI{36}{\volt} \\
+		I_1 =& {U \over R_1} =& { \SI{36}{\volt} \over \SI{4.0}{\ohm}}=& \SI{9.0}{\ampere} \\
+		I_3 =& {U \over R_3} =& { \SI{36}{\volt} \over \SI{24.0}{\ohm}}=& \SI{1.5}{\ampere} \\
+		I_{ges}=& I_1 +I_2+ I_3 =& \SI{4.5}{\ampere} + \SI{9.0}{\ampere} + \SI{1.5}{\ampere} =& \SI{15}{\ampere}\\
+		R_{ges}=& \left({1 \over \SI{4,0}{\ohm}} + {1 \over \SI{8,0}{\ohm}} + {1 \over \SI{ 24.0}{\ohm}}\right)^{-1}
+		=& \SI{2,4}{\ohm} \\
+		\end{array}
+		$$
+		Alternatively, you can calculate the total resistance using the total current and voltage:
+		$$R_{ges}={U \over I_{ges}}={\SI{36}{\volt} \over \SI{15}{\ampere}}= \SI{2,4}{\ohm }$$
+		
+		\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p10elL101/ae101.pdf}{task sheet}
+		\end{center}
+		
+	\end{document}

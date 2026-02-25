@@ -1,0 +1,82 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{4 cm}|p{1.6 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{2.0 cm}|}
+		\hline
+		&a) & b ) & c) & d) & e) & f) \\
+		& Bicycle & Car & Free Fall & Rocket & Bullet & Electron \\
+		\hline
+		Final velocity v & $\SI{10}{\meter\over\second}$& $\SI{37}{\meter\over\second}$& $\SI{29}{\meter\over\second}$ &$\SI{8,0}{km\over s}$ & $\SI{350}{\meter\over\second}$& $\SI{2,2e6}{\meter\over\second}$ \\
+		\hline
+		Acceleration distance s & $\SI{40}{\meter}$& $\SI{200}{\meter}$ & $\SI{44}{\meter}$& $\SI{500}{\kilo\meter }$ & $\SI{1,0}{\meter}$& $\SI{10}{\centi\meter}$\\
+		\hline
+		Time interval $\Delta t$ & $\SI{8,0}{\second}$ & $\SI{11}{\second}$& $\SI{3,0}{\second}$&$\SI {125}{\second}$ & $\SI{5,7}{\meter}s$ & $\SI{91}{\nano\second}$\\
+		\hline
+		Acceleration a & $\SI{1.25}{\meter \over{ \second^2}}$& $\SI{3.5}{\meter \over{ \second^2}}$ & $\SI {9,81}{\meter \over{ \second^2}}$ &$\SI{64}{\meter \over{ \second^2}}$&$\SI{6,1e4}{\meter \over{ \second^2}}$ & $\SI{2,4e13}{\meter \over{ \second^2}}$\\
+		\hline
+		Mass m & $\SI{105}{\kilogram}$ & $\SI{850}{\kilogram}$ & $\SI{0,10}{\kilogram}$ &$\SI{5000}{\kilogram }$ &$\SI{10}{\gram}$ & $\SI{9,1e-31}{\kilogram}$\\
+		\hline
+		Inertial force F & $\SI{131}{\newton}$ & $\SI{2975}{\newton}$ & $\SI{0.98}{\newton}$ &$\SI{320}{\kilo \newton}$ & $\SI{613}{\newton}$ &$\SI{2,2e-17}{\newton}$ \\
+		\hline
+		Acceleration work $W$ & $\SI{5250}{\joule}$ &$\SI{595}{\kilo\joule}$ & $\SI{43}{\joule}$ &$\SI{1.6e11 }{\joule}$ & $\SI{613}{\joule}$& $\SI{2,2e-18}{\joule}$\\
+		\hline
+	\end{tabular}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{5 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|}
+		\hline
+		& g) & h) & i) & j) & k)\\
+		\hline
+		Initial velocity $v_1$ & $\SI{5}{\meter\over\second}$ & $\SI{15}{\meter\over\second}$& $\SI{10}{\meter\over\second }$ & $\SI{50}{\meter\over\second}$ & $\SI{5,0}{\meter\over\second}$\\
+		\hline
+		Final velocity $v_2$ &$\SI{14}{\meter\over\second}$ & $\SI{30}{\meter\over\second}$& $\SI{0,0}{\meter\over \second}$ & $\SI{18}{\meter\over\second}$& $ \SI{0,0}{\meter\over\second}$\\
+		\hline
+		Acceleration distance s & $\SI{8,7}{\meter}$ & $\SI{100}{\meter}$&$\SI{5,1}{\meter}$ & $\SI{340}{ \meter}$& $\SI{5,0}{\milli\meter}$\\
+		\hline
+		Time interval $\Delta t$ & $\SI{0.9}{\second}$ &$\SI{4.4}{\second}$ &$\SI{1.0}{\second}$ & $ \SI{10}{\second}$ & $\SI{2,0}{\milli\second}$\\
+		\hline
+		Acceleration a & $\SI{9.81}{\meter \over{ \second^2}}$ & $\SI{3.4}{\meter \over{ \second^2}}$&$\SI {9,81}{\meter \over{ \second^2}}$ & $\SI{3,2}{\meter \over{ \second^2}}$ &$\SI{2500}{\meter \over{ \second^2}}$\\
+		\hline
+		Mass m & $\SI{0.40}{\kilogram}$ & $\SI{900}{\kilogram}$ & $\SI{80}{\gram}$& $\SI{250}{\kilogram }$& $\SI{0.30}{\kilogram}$\\
+		\hline
+		Inertial force F & $\SI{3.9}{\newton}$ &$\SI{3.0}{\kilo\newton}$& $\SI{0.78}{\newton}$& $\SI {800}{\newton}$ & $\SI{750}{\newton}$\\
+		\hline
+		Acceleration work $\Delta W$ & $\SI{34}{\joule}$& $\SI{3.0e5}{\joule}$ &$\SI{4.0}{\joule}$ & $\SI {272}{\kilo\joule}$& $\SI{3.8}{\joule}$\\
+		\hline
+		Process & II. & III. & I. & V. & IV.\\
+		\hline
+	\end{tabular}
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p10nmcL083/ae083.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

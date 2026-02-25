@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	%Title
+	{\bf Oscillating circuit exercise sheet }\\
+	\begin{enumerate}[1.]
+		%Task 1
+		\item A coil with inductance $L$ and a capacitor with capacitance $C$ form a resonant circuit. The ohmic resistance of the resonant circuit is negligibly small. The total energy of the oscillating circuit is $W_{ges}=\SI{2.9e-3}{\joule}$. For the current strength
+		$I$ in the oscillatory circuit at a time $t$ with $ t\ge 0~s$ applies:
+		$ I(t)= -\hat{I}\cdot \sin{ \left( {2 \pi \over T} \cdot t \right)}$, where $\hat{I}=\SI{120} {\milli\ampere}$ is the peak value of the current and $T=\SI{2.0}{\milli\second}$ is the period of the electromagnetic oscillation.
+		
+		\begin{enumerate}[a)]
+			\item Show the time course of the current $I$ for $0 \le t \le \SI{2,0}{\milli\second}$ in a $t-I$ diagram.
+			\item During electromagnetic oscillation, the oscillating circuit capacitor is constantly being charged and discharged. Specify a time interval during which the capacitor is charged. Justify your answer.
+			\item Calculate the inductance $L$ of the coil and the capacitance $C$ of the capacitor. $[\textnormal{Partial result:} \quad L=\SI{0,40}{\henry}]$
+			\item In the diagram of subtask 1. a) mark the maximum amount $Q_{max}$ of the charge that the capacitor absorbs. Calculate $Q_{max}$.
+			\item Calculate the electrical energy $W_{el,1}$ stored in the capacitor for a time $t_1$ at which the current intensity $I$ in the resonant circuit has the value $I=\SI{90}{\milli\ampere} $ accepts.
+		\end{enumerate}
+		
+		%Exercise 2
+		\item An oscillating circuit excites a transmitting dipole $D_S$, whose length $l$ can be changed, to oscillate with the frequency $f=\SI{2.5}{\giga\hertz}$. At the length $l_0$, the transmitting dipole is excited in the fundamental oscillation.
+		\begin{enumerate}[a)]
+			\item Calculate $l_0$.
+			
+			The transmitting dipole $D_S$ and an identical receiving dipole $D_E$ are arranged perpendicular to a horizontal plane, with this horizontal plane running through the two dipole centers. The receiving dipole registers the oscillation amplitude $E_0$ and receives the power $P_0$. A Hertzian grid is set up between $D_S$ and $D_E$ in such a way that the grid plane is aligned perpendicular to the straight line through the two dipole centers. The bars are significantly longer than the dipoles $D_S$ and $D_E$. First, the grid bars run parallel to the two dipoles.
+			
+			\item Describe and justify the effects of the grid on the electromagnetic wave in front of and behind the grid.
+			
+			\item The grid is now rotated by the angle $\alpha=55^\circ$, where the straight line through the two dipole centers is the axis of rotation. Calculate what percent of the power $P_0$ the dipole $D_E$ is now receiving. Illustrate your considerations with a sketch.
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/phys/p13schikL235/le235.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre235}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	
+\end{document}

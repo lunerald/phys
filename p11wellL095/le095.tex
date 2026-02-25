@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1.a)}\\
+	\begin{minipage}{0.3\textwidth}
+		In the sketch $d$ is the gap distance to be calculated $a={\SI{17.6}{\centi\meter}\over 2}=\SI{8.8}{\centi\meter}$ is the distance of the first maximum to the center of the screen and $l=\SI{2.80}{\meter}$ the distance of the screen to the double slit.
+	\end{minipage}
+	\begin{minipage}{0.7\textwidth}
+		\includegraphics[width=10 cm]{beu95.pdf}
+	\end{minipage}
+	
+	From the geometry of this arrangement it follows approximately for small angles:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		{\lambda \over d} &\approx& {a\over l} \quad (*)\\
+		d &=& {l \over a} \cdot \lambda \\
+		d &=& {\SI{2.80}{\meter} \over \SI{0.088}{\meter}}\cdot\SI{546e-9}{\meter}\\
+		d &=& \SI{17e-6}{\meter} = 17\SI{}{\micro\meter}
+	\end{array}
+	$$
+	
+	The gap distance is therefore $\SI{17}{\micro\meter}$.
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1.b)}\\
+	According to $(*)$ we have $a \sim \lambda$. This means that the distance between the intensity maxima on the screen also decreases with the wavelength. The number of observable maxima must therefore increase.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	We subtract the two equations and solve for l:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{\lambda_1 \over d} &=& {a_1\over l}\\
+		{\lambda_2 \over d} &=& {a_2\over l}\\
+		\hline
+		{\lambda_1 -\lambda_2 \over d} &=& {a_1-a_2 \over l}\\
+		l &=& {(a_1-a_2)} \cdot {d \over \lambda_1 -\lambda_2}\\
+		l &=& {\SI{0.003}{\meter}\cdot\SI{1e-4}{\meter} \over \SI{5.8959e-7}{\meter}-\SI{5.8899e- 7}{\meter}}\\
+		l&=& \SI{500}{\meter}
+	\end{array}
+	$$
+	The sodium double line cannot be separated with this arrangement.
+	\vspace{0.5 cm}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p11wellL095/ae095.pdf}{task sheet}
+	\end{center}
+	
+	
+	%End
+\end{document}

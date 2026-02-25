@@ -1,0 +1,163 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent {\bf Aufgabe 1. a)}\\
+Für die Winkelgeschwindigkeit $\omega$ gilt:
+$$\omega = 2 \pi \cdot f = 2 \pi \cdot \SI{1,5}{\hertz}= \SI{9,4}{1\over\second}$$
+Hiermit errechnet sich die Bahngeschwindigkeit:
+$$v_h = \omega \cdot r = \SI{9,4}{1\over\second} \cdot \SI{0,40}{\meter} = \SI{3,8}{\meter\over \second}$$
+\vspace{0.5 cm}
+
+\noindent {\bf Aufgabe 1. b)}\\
+Waagrechter Wurf: Zuerst berechnen wir die Fallzeit der Kugel. Es gilt:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+h  & = & {1\over 2}g\cdot t^2 \\
+t  & = & \sqrt{2\cdot h \over g} \\
+t  & = & \sqrt{2\cdot \SI{1,7}{\meter}\over \SI{9,81}{\meter\over {\second^2}}}\\
+t  & = & \SI{0,59}{\second}
+\end{array}
+$$ 
+In dieser Zeit hat sie im Flug die Strecke zurückgelegt:
+$$ s = v_h \cdot t = \SI{3,8}{\meter\over \second} \cdot \SI{0,59}{\second} = \SI{2,2}{\meter}$$
+Sie kommt also in $\SI{2,2}{\meter}$ Entfernung auf dem Boden auf.
+\vspace{0.5 cm}
+
+\begin{minipage}{0.6\textwidth}
+	Die Geschwindigkeit $v_h$ kennen wir schon als Horizontalgeschwindigkeit. Nun kommt aber als weitere, vertikale Komponente die Fallgeschwindigkeit $v_v= g \cdot t = \SI{5,8}{\meter\over \second}$ hinzu.
+	Beide Geschwindigkeitsvektoren bilden ein rechtwinkliges Dreieck mit
+	$$\tan{\alpha}= {v_v \over v_h} \quad \Leftrightarrow \quad \alpha = \tan^{-1} \left({\SI{5,8}{\meter\over \second} \over \SI{3,8}{\meter\over \second}}\right) = \SI{57}{\degree}$$
+\end{minipage}
+\hspace{0.5 cm}
+\begin{minipage}{0.3\textwidth}
+	\setlength{\unitlength}{1.5 cm}
+	\begin{picture}(3,2)
+	\put(0,2){\vector(0,-1){2}}
+	\put(0,0){\vector(1,0){3}}
+	\put(0,2){\vector(3,-2){3}}
+	\put(0.1,1){${v_v}$}
+	\put(1.3,0.2){${v_h}$}
+	\put(1.8,1){${v_{ges}}$}
+	\put(2.4,0.1){$\alpha$}
+	\end{picture}
+\end{minipage}
+
+Die Kugel trifft also mit dem Winkel von $\SI{57}{\degree}$ auf.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 2.}\\
+Seine Geschwindigkeit ist $v=\SI{10}{\meter\over \second}$; der Radius ist $r=14\cdot \SI{2,5}{\centi\meter}= \SI{0,35}{\meter}$.
+Damit ist die Frequenz, mit der sich die Räder drehen:
+$$ f = {v \over 2\pi r} = {\SI{10}{\meter\over \second} \over 2 \pi \cdot \SI{0,35}{\meter}}=\SI{4,5}{\hertz}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. a)}\\
+Es gilt für die Geschwindigkeiten $v_i$ (innen) und $v_a$ (außen) des Lesekopfes und damit für $f_i$ und $f_a$:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rclll}
+v_i &=& v_a \\
+2\pi f_i \cdot r_i &=& 2\pi f_a \cdot r_a\\
+f_i \cdot r_i &=& f_a \cdot r_a\\
+f_a &=& f_i \cdot {r_i \over r_a} &= \SI{500}{1\over\min} \cdot {\SI{2,2}{\centi\meter} \over \SI{5,8}{\centi\meter}}&=\SI{190}{1\over\min} 
+\end{array}
+$$
+Wir dürfen in den gegebenen Einheiten rechnen, weil dies eine reine Verhältnisgleichung ist.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. b)}\\
+Zur Abschätzung rechnen wir mit den Mittelwerten $\bar{f}\approx \SI{350}{1\over\min}$; $\bar{r}\approx \SI{4}{\centi\meter}$.
+Somit ist die Länge der Spur:
+$$l = v\cdot t = 2\pi \bar{f} \cdot \bar{r} \cdot t = 2 \pi \cdot {350\over \SI{60}{\second}} \cdot \SI{0,04}{\meter} \cdot 74\cdot \SI{60}{\second} =  \SI{6509}{\meter} \approx \SI{6,5}{\kilo\meter}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. c)}\\
+Die Fläche des bespielbaren Kreisringes der CD ist:
+$$A=(r_a^2-r_i^2)\cdot \pi =\SI{90}{\centi\meter^2}$$
+Breite der Spur = Fläche geteilt durch Länge der Spur:
+$$b={A \over l} = {\SI{0,009}{\meter^2} \over \SI{6509}{\meter}} \approx \SI{1,4e-7}{\meter}=\SI{140}{\nano\meter}$$ 
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 4.}\\
+Die Reifendrehzahl ist ein Drittel der Motordrehzahl; die Geschwindigkeit ist dann:
+$$v = \omega r = 2\pi f \cdot r = 2\pi \cdot {4500 \over 3 \cdot \SI{60}{\second} }\cdot \SI{0,30}{\meter} =\SI{47}{\meter\over \second}\approx \SI{170}{\kilo\meter\over \hour}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 5.}\\
+Eine volle Umdrehung entspricht einer Stunde, der Umfang ist:
+$$U=2\pi r = 2 \pi \cdot \SI{3}{\meter} \approx \SI{19}{\meter}$$
+Einer Minute entspricht ein Sechzigstel davon:
+$$b_{1min} = {\SI{19}{\meter} \over 60}=\SI{30}{\centi\meter}$$
+Analog entspricht einer Sekunde:
+$$b_{1s}=  {\SI{19}{\meter} \over 3600}=\SI{5}{\milli\meter}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 6.}\\
+Es gilt wieder für die Geschwindigkeit:
+$$v=\omega r = 2 \pi f \cdot R = {2 \pi \over T} \cdot R = {{}2\pi \over 24 \cdot 60 \cdot \SI{60}{\second}} \cdot  \SI{6378e3}{\meter} = \SI{463}{\meter\over\second}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 7.}\\
+$$r = {v \over \omega} ={v \over 2\pi f}= {\SI{2,2e6}{\meter\over\second} \over 2 \pi \cdot \SI{6,6e15}{1\over\second}}= \SI{5,3e-11}{\meter}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 8.}\\ 
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+	\hline
+	Körper & Merkur & Venus & Erde & Mars & Jupiter & Saturn & Uranus & Neptun \\
+	\hline
+	mittlerer Sonnenabstand in $\SI{1e6}{\kilo\meter}$ & 57,9 & 108,2 & 149,6 & 227,9 & 778,3 & 1427 & 2871 & 4498\\
+	\hline
+	Umlaufzeit in a & 0,241 & 0,615 & 1,000 & 1,881 &11,86 &29,45 & 84,02 & 164,8\\
+	\hline
+	mittlere Bahngeschwindigkeit in $\SI{}{\kilo\meter\over \second}$ & 47,9 & 35,1 & 29,8 & 24,1 & 13,1& 9,65 & 6,80 & 5,43\\
+	\hline
+\end{tabular}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 9. a)}\\
+für die Umrechnung vom Grad- ins Bogenmaß gilt:
+$${\alpha_{RAD} \over 2\pi} = {\alpha_{DEG} \over \SI{360}{\degree}} \quad \Rightarrow \quad 
+\alpha_{RAD}={\alpha_{DEG} \over \SI{360}{\degree}}\cdot 2\pi = {\SI{0,0040}{\degree} \over \SI{360}{\degree}} \cdot 2 \pi = 7,0 \cdot 10^{-5}$$
+Der Spiegel hat sich aber nur um den halben Winkel weiter gedreht, also ist $\alpha= 3,5\cdot 10^{-5}$.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 9. b)}\\
+Der Drehwinkel ist die Winkelgeschwindigkeit multipliziert mit der Zeit. Daraus folgt für die Lichtlaufzeit:
+$$ \alpha = \omega \cdot t \quad \Rightarrow \quad t = {\alpha \over \omega}={3,5 \cdot 10^{-5} \over 2\cdot \pi \cdot \SI{100}{1\over\second}}=\SI{5,6e-8}{\second}$$
+Hiermit lässt sich leicht $c$ berechnen:
+$$c={2\cdot d \over t}={2\cdot \SI{8,0}{\meter} \over \SI{5,6e-8}{\second}}=\SI{2,9e8}{\meter\over\second}$$
+\vspace{0.5 cm}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/phys/p10kreaL414/aa414.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}

@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	%Title
+	{\bf Exercises on strength of materials }\\
+	\begin{enumerate}[1.]
+		
+		%Task 1
+		\begin{minipage}{0.48\textwidth}
+			\item To investigate the elasticity, test rods with the cross section $A=\SI{50}{\milli\meter^2}$ are loaded by attaching different masses and the resulting change in length is measured with a strain gauge. The following diagram is obtained for steel.
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\includegraphics[width=5 cm]{emodul219}
+		\end{minipage}
+		
+		\begin{enumerate}[a)]
+			\item Determine using the given diagram
+			\begin{enumerate}[(i)]
+				\item the elastic modulus of steel
+				\item is the mass at which the elastic deformation is $\varepsilon = \SI{10}{\micro\meter\over \meter}$.
+				\item is the change in length in mm that a 2.5~m long steel rod with the same cross-section experiences at a tension of $\SI{4}{\newton\milli\meter^{-2}}$.
+			\end{enumerate}
+			\item In the given diagram, draw the graph for a material with an elastic modulus half as large
+		\end{enumerate}
+		
+		%Exercise 2
+		\begin{minipage}{0.48\textwidth}
+			\item A steel pipe is installed without tension at $\SI{20}{\celsius}$ so that it cannot give way. It is heated to $\SI{80}{\celsius}$ by hot gases flowing through it.
+		\end{minipage}
+		\hspace{0.7 cm}
+		\begin{minipage}{0.48\textwidth}
+			\includegraphics[width=5 cm]{rohr219}
+		\end{minipage}
+		
+		The linear expansion coefficient is $ \alpha=\SI{12e-6}{\kelvin^{-1}}$, the elastic modulus is $E=\SI{2.1e5}{\newton\milli\meter^{-2}} $
+		\begin{enumerate}[a)]
+			\item Calculate the compressive stress that occurs in the pipe.
+			\item Calculate the pressure force in the pipe
+		\end{enumerate}
+		
+		%Task 3
+		\begin{minipage}{0.55\textwidth}
+			\item A split flywheel is held together by two shrink rings that enclose both hub halves. The yield strength of the material is $\SI{285}{\newton\milli\meter^{-2}}$, the safety number should be $2.0$ and the two hub halves should be with the force $F=\SI{1100} {\kilo\newton}$ are held together.
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.42\textwidth}
+			\includegraphics[width=5 cm]{nabe219}
+		\end{minipage}
+		\begin{enumerate}[a)]
+			\item Calculate the necessary width $b$ of the rings
+			\item What inner diameter must the rings be made with?
+		\end{enumerate}
+		
+		%Task 4
+		\begin{minipage}{0.6\textwidth}
+			\item A copper bushing and two rigid washers are secured by a central steel screw
+			connected with each other. At the temperature $t_0=\SI{15}{\celsius}$ the system is installed without play but without preload. Calculate the stresses occurring in the bushing and screw when heated to $\SI{215}{\celsius}$. \\
+			$[E_{Cu}=\SI{1,1e5}{\newton\milli\meter^{-2}}; \quad E_{St}=\SI{2,1e5}{\newton\milli\meter^{-2}}; \quad
+			A_{St}=\SI{58}{\milli\meter^2}; \quad \alpha_{Cu}=\SI{1.65e-5}{\kelvin^{-1}}; \quad d_{ACu}=\SI{26}{\milli\meter};
+			\quad d_{ICu}=\SI{20}{\milli\meter}]$
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.38\textwidth}
+			\includegraphics[width=4 cm]{stacu219}
+		\end{minipage}
+		
+		%Task 5
+		\item From a steel sheet with the tensile strength $\SI{340}{\newton\milli\meter^{-2}}<R_m<\SI{440}{\newton\milli\meter^{-2}}$ and With a thickness of 6.0~mm, discs with a diameter of 36~mm should be cut out. The shear stress is at most $80\%$ of the tensile strength. Calculate the maximum compressive stress acting in the punch of the cutting tool.
+		
+		%Task 6
+		
+	\end{enumerate}
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	%End
+\end{document}
