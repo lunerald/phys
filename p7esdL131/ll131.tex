@@ -1,0 +1,143 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+
+\begin{document}
+
+
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+	
+	\section*{1. Verschiedene Stromquellen – typische Werte}
+	
+	\begin{center}
+		\begin{tabular}{ccc}
+			\toprule
+			\textbf{Stromquelle} & \textbf{Spannung (V)} & \textbf{Beispielhafte Anwendung} \\
+			\midrule
+			AA-Batterie & 1{,}5 & Taschenlampe, Fernbedienung \\
+			Powerbank (USB) & 5{,}0  & Handy laden \\
+			E-Bike-Akku & 36 – 48 & Elektromotor am Fahrrad \\
+			Steckdose (Haushalt) & 230 & Staubsauger, Lampen \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	\hrule
+	
+	\section*{2. Die 6-Volt-Glühbirne – was geht und was nicht?}
+	
+	\textbf{AA-Batterie (1{,}5 V)}   \\
+	a) Die Lampe glimmt kaum oder gar nicht – zu geringe Spannung.   \\
+	b) Nicht gefährlich, aber sinnlos.
+	
+	\textbf{Powerbank (5 V USB)}   \\
+	a) Lampe leuchtet, aber etwas schwächer als bei Nennspannung.   \\
+	b) Eher sinnvoll, wenn sonst nichts da ist – unkritisch.
+	
+	\textbf{2 AA-Batterien in Reihe (3 V)}   \\
+	a) Lampe glimmt leicht.   \\
+	b) Nicht gefährlich, aber zu schwach.
+	
+	\textbf{4 AA-Batterien in Reihe (6 V)}   \\
+	a) Lampe leuchtet ideal.   \\
+	b) Perfekt geeignet – volle Nennspannung.
+	
+	\textbf{E-Bike-Akku (36 V)}   \\
+	a) Lampe brennt sofort durch.   \\
+	b) Hochgradig gefährlich – nicht geeignet!
+	
+	\textbf{Steckdose (230 V)}   \\
+	a) Lampe explodiert oder verdampft fast.   \\
+	b) Lebensgefährlich – auf keinen Fall machen!
+	
+	\hrule
+	
+	\section*{3. Experiment}
+	
+		\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Spannung  U & Leistung P & Betriebsstromstärke I & Widerstand R \\ 
+		\hline
+		6 V  &  0,6 W & 0,1 A& 60 $\Omega$\\
+		\hline
+		6 V  & 1,8 W & 0,3 A & 20 $\Omega$\\
+		\hline
+		3,5 V & 0,7 W & 0,2 A  & 17,5  $\Omega$\\
+		\hline
+		2,2 V &  0,5 W &0,23 A & 9,7 $\Omega$ \\
+		\hline
+	\end{tabular}
+	\hrule
+	
+
+	\newpage
+	
+	Schaltungen für jeweils 	\textbf{eine} Glühbirne:
+	
+	\textbf{Schaltung 1:}   \\
+	Powerbank mit USB-Ausgang (5 V) und Lampe 6V \\
+	\textit{Lampe leuchtet, aber  nicht ganz mit voller Leistung}
+	
+	\textbf{Schaltung 2:}   \\
+	Eine AA-Batterie 1,5 V und Lampe 2,2 V\\
+	\textit{Lampe leuchtet, aber nicht ganz mit voller Leistung}
+	
+	
+	\textbf{Schaltung 3:}   \\
+	zwei AA-Batterien in Reihe 1,5 V mal 2 = 3 V und 3,5 V Lampe\\
+	\textit{ Lampe leuchtet, aber nicht ganz mit voller Leistung}
+	
+	\textbf{Schaltung 4:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und 6 V Lampe\\
+	\textit{ ideal passende Spannung, Lampe leuchtet mit voller Leistung}
+	
+	Schaltungen für 	\textbf{mehrere} Glühbirnen:
+	
+	\textbf{Schaltung 5:}   \\
+	Powerbank V mit USB-Ausgang (5 V) und zwei 6 V Lampen parallel\\
+	\textit{ Lampen leuchten, aber nicht ganz mit voller Leistung}
+	
+	\textbf{Schaltung 6:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und zwei 6 V Lampen parallel\\
+	\textit{ ideal passende Spannung, Lampen leuchten mit voller Leistung}
+	
+	\textbf{Schaltung 7:}   \\
+	Acht AA-Batterien in Reihe 1,5 V mal 4 = 12 V und zwei gleiche 6 V  Lampen in Reihe \\
+	\textit{ ideal passende Spannung, Lampen leuchten mit voller Leistung}
+	
+	\textbf{Schaltung 8:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und drei  2,2 V Lampen in Reihe\\
+	\textit{ Lampen leuchten, aber nicht ganz mit voller Leistung}
+	
+	\textbf{Schaltung 9:}   \\
+	Acht AA-Batterien in Reihe 1,5 V mal 4 = 12 V und vier 3,5 V  Lampen in Reihe \\
+	\textit{ Lampen leuchten, aber nicht ganz mit voller Leistung}
+	
+
+	
+	
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/phys/p7esdL131/aa131.pdf}{Aufgabenblatt}
+\end{center}
+	\end{document}

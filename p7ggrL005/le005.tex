@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	
+	\renewcommand{\arraystretch}{2.5}
+	\begin{tabular}{|c|p{13 cm}|}
+		\hline
+		$>\SI{1000}{\tonne}$ & container ship \\
+		\hline
+		$\SI{100}{\tonne}$ to $\SI{1000}{\tonne}$ & locomotive, Airbus A380\\
+		\hline
+		$\SI{10}{\tonne}$ to $\SI{100}{\tonne}$ & Brontosaurus, truck \\
+		\hline
+		$\SI{1}{\tonne}$ to $\SI{10}{\tonne}$ & car, tractor \\
+		\hline
+		$\SI{100}{\kilogram}$ to $\SI{1}{\tonne}$ & horse, motorcycle \\
+		\hline
+		$\SI{10}{\kilogram}$ to $\SI{100}{\kilogram}$ & drinks crate, bicycle\\
+		\hline
+		$\SI{1}{\kilogram}$ to $\SI{10}{\kilogram}$ & laptop, school bag \\
+		\hline
+		$\SI{100}{\gram}$ to $\SI{1}{\kilogram}$ & football, pigeon\\
+		\hline
+		$\SI{10}{\gram}$ to $\SI{100}{\gram}$ & chocolate bar, battery AA \\
+		\hline
+		$\SI{1}{\gram}$ to $\SI{10}{\gram}$ & 1 cent coin, dice, pencil\\
+		\hline
+		$\SI{100}{\milli\gram}$ to $\SI{1}{\gram}$ & cheat sheet, bean \\
+		\hline
+		$\SI{10}{\milli\gram}$ to $\SI{100}{\milli\gram}$ & blade of grass, postage stamp \\
+		\hline
+		$\SI{1}{\milli\gram}$ to $\SI{10}{\milli\gram}$ & pine needle, rice grain\\
+		\hline
+		$< \SI{1}{\milli\gram}$ & hair, grain of sand \\
+		\hline
+	\end{tabular}
+	
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/phys/p7ggrL005/ae005.pdf}{task sheet}
+	\end{center}
+	
+	
+\end{document}

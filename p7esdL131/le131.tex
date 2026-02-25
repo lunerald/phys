@@ -1,0 +1,139 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm, 
+	headsep=10mm, footskip=12mm}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{href-ul}
+\hypersetup{ 
+	colorlinks=true, 
+	linkcolor=blue, 
+	urlcolor=blue}
+
+\begin{document}
+	
+	
+
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Solution Sheet of \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+
+	
+	\section*{1. Different power sources – typical values}
+	
+	\begin{center}
+		\begin{tabular}{ccc}
+			\toprule
+			\textbf{Power source} & \textbf{Voltage (V)} & \textbf{Example application} \\
+			\midrule
+			AA battery & 1.5 & torch, remote control \\
+			Power bank (USB) & 5.0 & cell phone charging \\
+			E-bike battery & 36 – 48 & electric motor on a bicycle \\
+			Household socket & 230 & vacuum cleaner, lamps \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	\hrule
+	
+	\section*{2. The 6-volt light bulb – what works and what doesn't?}
+		
+		\textbf{AA battery (1.5 V)}\\
+		a) The lamp barely glows or doesn't glow at all – voltage too low.\\
+		b) Not dangerous, but pointless.
+		
+		\textbf{Power bank (5 V USB)}\\
+		a) The lamp glows, but slightly dimmer than at rated voltage.\\
+		b) Rather useful if nothing else is available – not critical.
+		
+		\textbf{2 AA batteries in series (3 V)}\\
+		a) The lamp glows slightly.\\
+		b) Not dangerous, but too dim.
+		
+		\textbf{4 AA batteries in series (6 V)}\\
+		a) The lamp glows perfectly.\\
+		b) Perfectly suitable – full rated voltage.
+		
+		\textbf{E-bike battery (36 V)} \\
+		a) The lamp burns out immediately. \\
+		b) Extremely dangerous – not suitable!
+		
+		\textbf{Socket (230 V)} \\
+		a) The lamp explodes or almost vaporizes. \\
+		b) Life-threatening – do not do this under any circumstances!
+		
+		\hrule
+		
+		\section*{3. Experiment}
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Voltage U & Power P & Operating Current I & Resistance R \\
+			\hline
+			6 V & 0.6 W & 0.1 A & 60 $\Omega$\\
+			\hline
+			6 V & 1.8 W & 0.3 A & 20 $\Omega$\\
+			\hline
+			3.5 V & 0.7 W & 0.2 A & 17.5 $\Omega$\\
+			\hline
+			2.2 V & 0.5 W & 0.23 A & 9.7 $\Omega$ \\
+			\hline
+		\end{tabular}
+		\hrule
+		
+		\newpage
+		
+		Circuits for \textbf{one} light bulb:
+		
+		\textbf{Circuit 1:}
+		Power bank with USB output (5 V) and 6 V lamp
+		\textit{Lamp lights up, but not quite at full power}
+		
+		\textbf{Circuit 2:}
+		One 1.5 V AA battery and 2.2 V lamp
+		\textit{Lamp lights up, but not quite at full power}
+		
+		\textbf{Circuit 3:}
+		Two AA batteries in series: 1.5 V times 2 = 3 V and 3.5 V lamp
+		\textit{Lamp lights up, but not quite at full power}
+		
+		\textbf{Circuit 4:}
+		Four AA batteries in series: 1.5 V times 4 = 6 V and 6 V lamp
+		\textit{Ideally matched voltage, lamp lights up at full power}
+		
+		Circuits for \textbf{multiple} light bulbs:
+		
+		\textbf{Circuit 5:}
+		Power bank V with USB output (5 V) and two 6 V bulbs in parallel
+		\textit{Lamps light up, but not quite at full power}
+		
+		\textbf{Circuit 6:}
+		Four AA batteries in series, 1.5 V times 4 = 6 V, and two 6 V bulbs in parallel
+		\textit{Ideally matched voltage, bulbs light up at full power}
+		
+		\textbf{Circuit 7:}
+		Eight AA batteries in series, 1.5 V times 4 = 12 V, and two identical 6 V bulbs in series
+		\textit{Ideally matched voltage, bulbs light up at full power}
+		
+		\textbf{Circuit 8:}
+		Four AA batteries in series, 1.5 V times 4 = 6 V, and three 2.2 V bulbs in series
+		\textit{Lamps light up, but not at full power}
+	
+	\textbf{Circuit 9:} 
+	Eight AA batteries in series 1.5 V times 4 = 12 V and four 3.5 V lamps in series \\
+	\textit{Lamps light up, but not quite at full power}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Click here to return to the \href{https://www.okuyakl.de/phys/p7esdL131/ae131.pdf}{worksheet}
+	\end{center}
+\end{document}

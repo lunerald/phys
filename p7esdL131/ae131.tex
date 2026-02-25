@@ -1,0 +1,199 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm, 
+	headsep=10mm, footskip=12mm}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+\usepackage{href-ul}
+\hypersetup{ 
+	colorlinks=true, 
+	linkcolor=blue, 
+	urlcolor=blue}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\begin{document} 
+	
+	Exercise sheet: Compare and evaluate power sources 
+	
+	\section*{1. Different power sources – what can they do?}
+	
+	Something's mixed up here. Assign the voltages to the power sources!
+	
+	\begin{center}
+		\begin{tabular}{lcccc}
+			\textbf{Power source} & AA battery & socket & power bank & e-bike battery \\
+			\vspace{1 cm} & & & & \\
+			\textbf{Voltage} & \fbox{230 V} & \fbox{5 V} & \fbox{36 V} & \fbox{1.5 V} \\
+		\end{tabular}
+	\end{center}
+	
+	Name one electrical device that can be powered by each of these power sources!
+	
+	\section*{2. The 6-volt light bulb }
+	
+	You have a small light bulb with a nominal voltage of 6 V. Consider each power source:
+	
+	\begin{itemize}
+		\item a) \textbf{What happens if you power the light bulb with it?}
+		\item b) \textbf{Is this useful or dangerous?}
+	\end{itemize}
+	
+	\vspace{0.3 cm}
+	{\bf AA battery (1.5 V)} \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}} \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+	
+	\vspace{0.3 cm}
+	\textbf{Power bank (5 V USB)} \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}} \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}} 
+	
+	\vspace{0.3 cm} 
+	\textbf{2 AA batteries in series (3 V)} \\ 
+	\vspace{0.3 cm}\\ 
+	a) \underline{\hspace{15 cm}} \\ 
+	\vspace{0.3 cm}\\ 
+	b) \underline{\hspace{15 cm}} 
+	
+	
+	\vspace{0.3 cm} 
+	\textbf{4 AA batteries in series (6V)} \\ 
+	\vspace{0.3 cm}\\ 
+	a) \underline{\hspace{15 cm}} \\ 
+	\vspace{0.3 cm}\\ 
+	b) \underline{\hspace{15 cm}}
+	
+	\newpage 
+	\vspace{0.3 cm} 
+	\textbf{E-bike battery (36 V)} \\ 
+	\vspace{0.3 cm}\\ 
+	a) \underline{\hspace{15 cm}} \\ 
+	\vspace{0.3 cm}\\ 
+	b) \underline{\hspace{15 cm}} 
+	
+	\vspace{0.3 cm} 
+	\textbf{Socket (230 V)} \\ 
+	\vspace{0.3 cm}\\ 
+	a) \underline{\hspace{15 cm}} \\ 
+	\vspace{0.3 cm}\\ 
+	b) \underline{\hspace{15 cm}}
+	
+	
+	
+	\section*{3. Experiment}
+	
+	\begin{minipage}{0.75\textwidth}
+		\textbf{You have:} light bulbs with the following technical data:
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Voltage U & Power P & Operating Current I & Resistance R \\
+			\hline
+			6 V & 0.6 W & & \\
+			\hline
+			6 V & 1.8 W & & \\
+			\hline
+			3.5 V & 0.7 W & & \\
+			\hline
+			2.2 V & 0.5 W & & \\
+			\hline
+		\end{tabular}
+	\end{minipage}
+	\begin{minipage}{0.2\textwidth}
+		
+		\begin{tikzpicture}[scale=1] 
+			% triangle with side length 2.5 cm 
+			\coordinate (U) at (0,0); 
+			\coordinate (I) at (2.5,0); 
+			\coordinate (P) at (1.25, {2.5*sqrt(3)/2}); 
+			
+			% draw lines 
+			\draw[thick] (U) -- (I) -- (P) -- cycle; 
+			
+			% label inside 
+			\node[above=0.1cm of U, xshift=0.7cm] {\large U}; 
+			\node[above=0.1cm of I, xshift=-0.6cm] {\large I}; 
+			\node[below=0.3cm of P] {\large P}; 
+		\end{tikzpicture} 
+		\vspace{1cm} 
+		
+		\begin{tikzpicture}[scale=1] 
+			% triangle with side length 2.5 cm 
+			\coordinate (R) at (0,0); 
+			\coordinate (I) at (2.5,0); 
+			\coordinate (U) at (1.25, {2.5*sqrt(3)/2}); 
+			
+			% draw lines 
+			\draw[thick] (R) -- (I) -- (U) -- cycle; 
+			
+			% label inside 
+			\node[above=0.1cm of R, xshift=0.7cm] {\large R}; 
+			\node[above=0.1cm of I, xshift=-0.6cm] {\large I}; 
+			\node[below=0.3cm of U] {\large U}; 
+		\end{tikzpicture}
+		
+	\end{minipage}
+	
+	\textbf{Also} any number of 1.5 V AAA batteries, a 5 V power bank, alligator clips, and cables.
+	
+	\textbf{Task:} Make sure that the following circuits with a light bulb make sense and recreate them using the experiment kit.
+	Note that the voltage of the power source must not exceed the operating voltage of the light bulb. Be careful when connecting the components to avoid short circuits. Note your observations and judge whether the respective circuit is optimal.
+	
+	Circuits for single light bulbs:
+	
+	\textbf{Circuit 1:}
+	Power bank with USB output (5 V) and 6 V lamp
+	
+	\textbf{Circuit 2:}
+	One 1.5 V AA battery and 2.2 V lamp
+	
+	\textbf{Circuit 3:}
+	Two AA batteries in series: 1.5 V times 2 = 3 V and 3.5 V lamp
+	
+	\textbf{Circuit 4:}
+	Four AA batteries in series: 1.5 V times 4 = 6 V and 6 V lamp
+	
+	\newpage
+	Circuits for multiple light bulbs:
+	
+	\textbf{Circuit 5:}
+	Power bank with USB output (5 V) and two 6 V lamps in parallel
+	
+	
+	\textbf{Circuit 6:}
+	Four AA batteries in series: 1.5 V times 4 = 6 V and two 6 V lamps in parallel
+	
+	\textbf{Circuit 7:}
+	Eight AA batteries in series 1.5 V times 4 = 12 V and two identical 6 V lamps in series
+	
+	\textbf{Circuit 8:}
+	Four AA batteries in series, 1.5 V times 4 = 6 V, and three 2.2 V lamps in series.
+
+	\textbf{Circuit 9:}
+	Eight AA batteries in series, 1.5 V times 4 = 12 V, and four 3.5 V lamps in series.
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		For the solution, please \href{https://www.okuyakl.de/phys/p7esdL131/le131.pdf}{click here} or scan the QR code.\\
+		More worksheets are available at
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qre131}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1} 
+		
+\end{minipage}}
+\end{document}

@@ -1,0 +1,209 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\begin{document}
+	
+	Übungsblatt: Stromquellen vergleichen und bewerten 
+	
+	\section*{1. Verschiedene Stromquellen – was können sie leisten?}
+	
+	Hier ist etwas durcheinander geraten. Ordne die Spannungen den Stromquellen zu!
+	
+	\begin{center}
+		\begin{tabular}{lcccc}
+			\textbf{Stromquelle} & AA-Batterie & Steckdose  & Powerbank &  E-Bike-Akku \\
+			\vspace{1 cm} & & & & \\
+			\textbf{Spannung}  & \fbox{230 V} & \fbox{5 V} & \fbox{36 V} & \fbox{1,5 V} \\
+		\end{tabular}
+	\end{center}
+	
+	Gib je ein elektrisches Gerät an, das mit dieses Stromquellen betrieben werden kann!
+	
+	\section*{2. Die 6-Volt-Glühbirne }
+	
+	Du hast eine kleine Glühbirne mit 6 V Nennspannung. Überlege bei jeder Stromquelle:
+	
+	\begin{itemize}
+		\item a) \textbf{Was passiert, wenn du die Glühbirne damit betreibst?}
+		\item b) \textbf{Ist das sinnvoll oder gefährlich?}
+	\end{itemize}
+	
+	
+
+
+	\vspace{0.3 cm}
+	{\bf AA-Batterie (1,5 V)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}  \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+	
+	\vspace{0.3 cm}
+	\textbf{Powerbank (5 V USB)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}   \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+	
+	\vspace{0.3 cm}
+	\textbf{2 AA-Batterien in Reihe (3 V)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}   \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+
+	
+	\vspace{0.3 cm}
+	\textbf{4 AA-Batterien in Reihe (6 V)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}   \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+		
+\newpage
+	\vspace{0.3 cm}
+	\textbf{E-Bike-Akku (36 V)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}   \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+	
+	\vspace{0.3 cm}
+	\textbf{Steckdose (230 V)}   \\
+	\vspace{0.3 cm}\\
+	a) \underline{\hspace{15 cm}}   \\
+	\vspace{0.3 cm}\\
+	b) \underline{\hspace{15 cm}}
+
+
+	
+\section*{3. Experiment}
+
+\begin{minipage}{0.75\textwidth}
+	\textbf{Du hast:} Glühbirnen mit folgenden technischen Daten:
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+ 	  Spannung  U & Leistung P & Betriebsstromstärke I & Widerstand R \\ 
+ 	  \hline
+	6 V  &  0,6 W & & \\
+	 \hline
+	6 V  & 1,8 W & & \\
+	 \hline
+	3,5 V & 0,7 W & &   \\
+	 \hline
+	2,2 V &  0,5 W & &  \\
+	\hline
+	\end{tabular}
+\end{minipage}				
+\begin{minipage}{0.2\textwidth}
+	
+	
+	\begin{tikzpicture}[scale=1]
+		% Dreieck mit Seitenlänge 2.5 cm
+		\coordinate (U) at (0,0);
+		\coordinate (I) at (2.5,0);
+		\coordinate (P) at (1.25, {2.5*sqrt(3)/2});
+		
+		% Linien zeichnen
+		\draw[thick] (U) -- (I) -- (P) -- cycle;
+		
+		% Beschriftung innerhalb
+		\node[above=0.1cm of U, xshift=0.7cm] {\large U};
+		\node[above=0.1cm of I, xshift=-0.6cm] {\large I};
+		\node[below=0.3cm of P] {\large P};
+	\end{tikzpicture}
+	\vspace{1 cm}
+	
+	\begin{tikzpicture}[scale=1]
+		% Dreieck mit Seitenlänge 2.5 cm
+		\coordinate (R) at (0,0);
+		\coordinate (I) at (2.5,0);
+		\coordinate (U) at (1.25, {2.5*sqrt(3)/2});
+		
+		% Linien zeichnen
+		\draw[thick] (R) -- (I) -- (U) -- cycle;
+		
+		% Beschriftung innerhalb
+		\node[above=0.1cm of R, xshift=0.7cm] {\large R};
+		\node[above=0.1cm of I, xshift=-0.6cm] {\large I};
+		\node[below=0.3cm of U] {\large U};
+	\end{tikzpicture}
+	
+	
+\end{minipage}
+
+	\textbf{Dazu noch} beliebig viele AAA-Batterien 1,5 V, eine Powerbank 5 V,  Krokodilklemmen und Kabel. 
+		
+	
+	\textbf{Aufgabe:} Vergewissere Dich, dass folgende Schaltungen mit  \textbf{einer} Glühbirne  \textbf{sinnvoll} sind und baue sie mit dem Experimentierset nach. 
+	Beachte hierbei, dass die Spannung der Stromquelle nicht die Betriebsspannung der Glühbirne übersteigen darf. Passe beim Zusammenstecken auf, dass es keinen Kurzschluss gibt. Notiere jeweils Deine Beobachtung und urteile, ob die jeweilige Schaltung optimal ist.
+	
+		\textbf{Schaltung 1:}   \\
+	Powerbank mit USB-Ausgang (5 V) und Lampe 6V \\
+	
+	\textbf{Schaltung 2:}   \\
+	Eine AA-Batterie 1,5 V und Lampe 2,2 V\\
+	
+	
+	\textbf{Schaltung 3:}   \\
+	zwei AA-Batterien in Reihe 1,5 V mal 2 = 3 V und 3,5 V Lampe\\
+	
+	\textbf{Schaltung 4:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und 6 V Lampe\\
+	
+	\newpage
+	Schaltungen für mehrere Glühbirnen:
+	
+	\textbf{Schaltung 5:}   \\
+	Powerbank V mit USB-Ausgang (5 V) und zwei 6 V Lampen parallel\\
+
+	
+	\textbf{Schaltung 6:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und zwei 6 V Lampen parallel\\
+	
+	\textbf{Schaltung 7:}   \\
+	Acht AA-Batterien in Reihe 1,5 V mal 4 = 12 V und zwei gleiche 6 V  Lampen in Reihe \\
+
+	
+	\textbf{Schaltung 8:}   \\
+	Vier AA-Batterien in Reihe 1,5 V mal 4 = 6 V und drei  2,2 V Lampen in Reihe\\
+	
+	
+	\textbf{Schaltung 9:}   \\
+	Acht AA-Batterien in Reihe 1,5 V mal 4 = 12 V und vier 3,5 V  Lampen in Reihe \\
+
+	
+
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			Zur Lösung bitte \href{https://www.okuyakl.de/phys/p7esdL131/ll131.pdf}{hier klicken} oder den QR-Code scannen.\\
+			Weitere Arbeitsblätter gibt es unter 
+			
+			\href{https://www.okuyakl.de}{www.okuyakl.de}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qr131}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+\end{document}
